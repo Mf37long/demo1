@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration:none;
+	}
+	li{
+		list-style-type:none;
+	}
+	.container1{
+		text-align:center;
+		width:1535px;
+		height:240px;
+		background-color:black;
+	}
+	.container1 img{
+		width:180px;
+		height:240px;
+	}
+	.duanluo1,.duanluo2{
+		width:670px;
+		height:180px;
+		line-height:180px;
+	}
+	.duanluo1{
+		float:left;
+		color:white;
+		font-family:Viner Hand ITC;
+		font-size:90px;
+	}
+	.duanluo2{
+		float:right;
+		color:red;
+		font-family:Viner Hand ITC;
+		font-size:90px;
+	}
+	.duanluo3{
+		display:inline-block;
+		position:relative;
+		bottom:20px;
+		left:560px;
+		color:white;
+	}
+	.duanluo3 a{
+		color:green;
+	}
+	.sousuo{
+		float:right;
+		position:relative;
+		bottom:45px;
+		right:15px;
+	}
+	.seach{
+		width:200px;
+		height:20px;
+		border-color:#8A7B66;
+		padding-left:19px;
+		float:left;
+		background-color:black;
+	}		
+	.submit{
+		width:25px;
+		height:24px;
+		background:black url(雪梨在线_slices/fa-search.png) no-repeat center center;
+		vertical-align:bottom;
+		border:none;
+		float:left;
+	}
+	.container2{
+		background-color:black;
+		width:1535px;
+		height:80px;
+	}
+	.daohang1{
+		width:1278px;
+		height:60px;
+		float:left;
+		padding-left:10px;
+		padding-right:10px;
+		text-align:center;
+		font-size:16px;
+	}
+	.daohang1 li{
+		float:left;
+		width:213px;
+		height:60px;
+		line-height:60px;
+	}
+	.daohang1 a{
+		color:white;
+	}
+	.container3{
+		width:1535px;
+		height:327px;
+		background-color:black;
+	}
+	.daohang2{
+		width:200px;
+		height:303px;
+		float:left;
+		background-color:rgba(0,0,0,1);
+		text-align:center;
+		font-size:20px;
+	}
+	.daohang2 li{
+		width:200px;
+		height:100px;
+		line-height:100px;
+		border:1px solid black;
+	}
+	.daohang2 a{
+		color:#8A7B66;
+	}
+	.tuwen1 img{
+		width:540px;
+		height:327px;
+		float:left;
+		margin-right:15px;
+		display:inline-block;
+	}
+	.tuwen2 img{
+		width:540px;
+		height:327px;
+		float:left;
+		display:inline-block;
+		position:relative;
+		bottom:37px;
+	}
+	.tuwen1 p{
+		color:white;
+		position:relative;
+		right:300px;
+		top:250px;
+		font-size:18px;
+		color:grey;
+	}
+	.zhuchang1{
+		color:#8A7B66;
+	}
+	.geming1{
+		color:orange;
+		font-family:华文隶书;
+		position:relative;
+		font-size:35px;
+		bottom:250px;
+		right:180px;
+	}
+	.tuwen2 p{
+		color:white;
+		position:relative;
+		right:250px;
+		top:220px;
+		font-size:18px;
+		color:grey;
+	}
+	.zhuchang2{
+		color:#8A7B66;
+	}
+	.geming2{
+		color:orange;
+		font-family:华文隶书;
+		position:relative;
+		font-size:35px;
+		bottom:260px;
+		right:125px;
+	}
+	.daohang3{
+		width:200px;
+		height:303px;
+		float:right;
+		background-color:rgba(0,0,0,1);
+		text-align:center;
+		font-size:25px;
+		position:relative;
+		bottom:75px;
+		right:35px;
+	}
+	.daohang3 li{
+		width:200px;
+		height:150px;
+		line-height:100px;
+		border:1px solid black;
+	}
+	.daohang3 a{
+		color:#8A7B66;
+	}
+	.container4{
+		width:1535px;
+		height:700px;
+		background-color:black;
+		padding-top:10px;
+	}
+	.jieshao1{
+		width:1535px;
+		height:100px;
+		text-align:center;
+		background-color:rgb(15,15,15);
+	}
+	.biaoti1{
+		height:100px;
+		line-height:100px;
+		display:inline-block;
+		float:left;
+		color:white;
+		text-align:center;
+		position:relative;
+		bottom:30px;
+		font-size:25px;
+	}
+	.jieshao1 img{
+		width:200px;
+		height:100px;
+		position:relative;
+		bottom:30px;
+		left:180px;
+		display:inline-block;
+		float:right;
+	}
+	.daohang4{
+		width:1000px;
+		height:100px;
+		display:inline-block;
+		position:relative;
+		bottom:125px;
+	}
+	.daohang4 li{
+		width:200px;
+		height:99px;
+		float:left;
+		text-align:center;
+		line-height:100px;
+		font-size:20px;
+		border-bottom:1px solid rgb(15,15,15);
+	}
+	.daohang4 a{
+		color:#8A7B66;
+	}
+	.daohang4 a:hover{
+		border-bottom:1px solid #8A7B66;
+	}
+	.biaoti2{
+		width:500px;
+		height:600px;
+		float:left;
+		display:inline-block;
+		color:#8A7B66;
+		font-size:100px;
+		font-family:方正舒体;
+		text-align:center;
+		position:relative;
+		right:200px;
+	}
+	.biaoti2 li{
+		wdith:500px;
+		height:285px;
+		line-height:285px;
+	}
+	.neirong1{
+		wdith:1535px;
+		height:570px;
+	}
+	.duanluo4{
+		width:930px;
+		padding-left:20px;
+		height:570px;
+		float:right;
+		display:inline-block;
+		color:#8A7B66;
+		position:relative;
+		bottom:1140px;
+		text-indent:20px;
+	}
+	.neirong1 img{
+		width:950px;
+		height:570px;
+		float:right;
+		display:inline-block;
+		position:relative;
+		bottom:570px;
+	}
+	.container5{
+		padding-top:200px;
+		width:1535px;
+		height:700px;
+		background-color:black;
+		text-align:center;
+		position:relative;
+	}
+	.jieshao3{
+		color:white;
+		text-align:center;
+		font-size:25px;
+		display:inline-block;
+		float:left;
+		position:absolute;
+		bottom:750px;
+		left:50px;
+	}
+	.fengjing1{
+		width:400px;
+		height:500px;
+		float:left;
+		position:absolute;
+		bottom:200px;
+		left:50px;
+		margin-right:1px;
+	}
+	.fengjing2{
+		width:250px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:452px;
+	}
+	.fengjing3{
+		width:250px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:704px;
+	}
+	.fengjing4{
+		width:250px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:956px;
+	}
+	.fengjing5{
+		width:250px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:1208px;
+	}
+	.fengjing6{
+		width:500px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:452px;
+		bottom:200px;
+	}
+	.fengjing7{
+		width:500px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:954px;
+		bottom:200px;
+	}
+	.more{
+		position:absolute;
+		bottom:140px;
+		right:50px;
+		font-size:25px;
+	}
+	.more a{
+		color:green;
+	}
+	.other{
+		position:absolute;
+		bottom:50px;
+		left:768px;
+		font-size:30px;
+	}
+	.other a{
+		color:#8A7B66;
+	}
+	.container6{
+		width:1535px;
+		height:250px;
+		background-color:black;
+		position:relative;
+	}
+	.yuyan1{
+		display:inline-block;
+		color:white;
+		position:absolute;
+		font-size:20px;
+		bottom:150px;
+		font-family:方正舒体;
+	}
+	.yuyan1 span{
+		color:green;
+		position:absolute;
+		top:50px;
+		left:100px;
+		font-size:30px;
+		font-family:方正舒体;
+	}
+	.banquan{
+		width:200px;
+		height:50px;
+		float:right;
+		position:absolute;
+		bottom:10px;
+		right:200px;
+	}
+	.banquan li{
+		width:100px;
+		height:50px;
+		line-height:50px;
+		float:left;
+	}
+	.banquan a{
+		color:white;
+	}
+	</style>
+</head>
+<body>
+	<div class="header-top">
+		<div class="container1 clear">
+			<p class="duanluo1"><span>Welcome To</span></p>
+			<p class="duanluo2"><span>Shadow Isles</span></p>
+			<img src="作业8所需图片/Warden of soul lock .jpg">
+			<p class="duanluo3">请<a href="#">登录</a>/<a href="#">注册</a></p>
+		</div>
+	</div>
+	<div class="header-middle">
+		<div class="container2 clear">
+			<ul class="daohang1">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">英雄系列故事</a></li>
+				<li><a href="#">活动中心</a></li>
+				<li><a href="#">公告</a></li>
+				<li><a href="#">福光岛(过去)</a></li>
+				<li><a href="#">更多...</a></li>
+			</ul>
+			<form class="sousuo">
+			<input type="text" placeholder="输入关键字" class="seach"/>
+			<input type="button" class="submit"/>
+			</form>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="container3 clear">
+			<ul class="daohang2">
+				<li><a href="#">演唱会</a></li>
+				<li><a href="#">乐队介绍</a></li>
+				<li><a href="#">乐队成员</a></li>
+			</ul>
+			<div class="tuwen1 clear">
+				<img src="作业8所需图片/penta kill.jpg">
+				<p>主唱<span class="zhuchang1">卡尔萨斯</span><span class="geming1">凡性的提醒</span></p>
+				</div>
+			<div class="tuwen2 clear">
+				<img src="作业8所需图片/Kayle.jpg">
+				<p>主唱<span class="zhuchang2">凯尔</span><span class="geming2">不灭之握</span></p>
+			</div>
+			<ul class="daohang3">
+				<li><a href="#">皮肤介绍</a></li>
+				<li><a href="#">皮肤购买</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="body-top">
+		<div class="container4">
+			<div class="jieshao1 clear">
+				<p class="biaoti1">暗影岛背景故事</p>
+				<img src="作业8所需图片/Shadow of war.jpg">
+				<ul class="daohang4 clear">
+					<li><a href="#">余恨</a></li>
+					<li><a href="#">王子挽歌</a></li>
+					<li><a href="#">福影双至</a></li>
+					<li><a href="#">海葬</a></li>
+					<li><a href="#">临终仪式</a></li>
+				</ul>
+			</div>
+			<div class="neirong1 clear">
+				<ul class="biaoti2 clear">
+					<li>余</li>
+					<li>恨</li>
+				</ul>
+				<img src="作业8所需图片/Spider Queen.jpg">
+				<p class="duanluo4">他躺在血泊中，洁白的石头上流淌着鲜亮的猩红。他的剑落在身边，剑刃已经崩裂。杀害他的人们围绕他站着。四周笼罩在阴影里，但他的眼中只有她。<br/>她与他四目相对，但却视而不见。他染血的脸庞像镜中的倒影般回望他。他侧身躺着。呼吸轻浅，越来越弱。<br/>她僵死的手冷冰冰的，但他什么感觉都没有。一种宁静像裹尸布一样将他遮盖。没有痛苦，没有恐惧，没有怀疑。都已不复存在。<br/>他戴着护甲的手指握紧了她的手。生时无法与她共度，但死后却可与她相伴。<br/>在似乎已经经历了永远以后，他再次感到平静……<br/>“你好，莱卓斯”。一个本不该有的声音出现了。<br/>莱卓斯……是他的名字。<br/>他听到一声邪恶、戏谑的狂笑，然后是铁链摇摆的声音。<br/>“我不明白你为什么要如此折磨自己，但我很高兴看到你的痛苦。”<br/>现实像浪潮一般压过来，威胁着要把他拖下深渊。<br/>他身子下的血泊已经有数百年的沧桑，只剩下棕褐色的薄层。石头也不是白色，而是漆黑的，遍布裂痕。天空中乱流涌动，黑云在闪电的映照下忽明忽暗。
+				<br/>到处都是翻腾的黑雾。<br/>她片刻之间依然还在，他紧紧抱着她，不愿放手。<br/>“我的爱人。”他吐出一口气，但随即她便消散了，就像风中的灰烬。他手中空无一物。<br/>他已经死了<br/>他被困在了这永恒的交界状态中。<br/>莱卓斯站起来，拾起了残破的剑。<br/>他举起鬼影般的剑，指向了打破他回忆幻象的人。那个充满憎恨的恶灵潜伏在黑暗中，眼中燃烧着冷焰，对他冷嘲热讽。那盏受诅咒的灯笼正放在附近的碎石残骸上，散发出一道道死光，被俘获的灵魂正在里面翻滚。<br/>魂锁典狱长。锤石。<br/>噢，他对他真是恨之入骨。<br/>这个恶灵一直在纠缠、嘲弄、耻笑他，似乎已经有无数个世纪。现在他居然找到了这里？这里曾是他的避风港，只有这个地方能让他在恐怖的现实中感受到片刻的安宁。<br/><a href="#" class="quanbu1">查看全部</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="body-bottom">
+		<div class="container5 clear">
+			<p class="jieshao3">暗影岛的风景</p>
+			<img src="作业8所需图片/Shadow Isles view1.jpg" class="fengjing1">
+			<img src="作业8所需图片/Shadow Isles view2.jpg" class="fengjing2">
+			<img src="作业8所需图片/Shadow Isles view3.jpg" class="fengjing3">
+			<img src="作业8所需图片/Shadow Isles view4.jpg" class="fengjing4">
+			<img src="作业8所需图片/Shadow Isles view6.jpg" class="fengjing5">
+			<img src="作业8所需图片/Shadow Isles view7.jpg" class="fengjing6">
+			<img src="作业8所需图片/Shadow Isles view8.jpg" class="fengjing7">
+			<p class="more"><a href="#">更多风景</a></p>
+			<p class="other"><a href="#">其他地区</a></p>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="container6">
+			<img src="作业8所需图片/Shadow Isles .png">
+			<p class="yuyan1">我们一直都在，自从福光岛诞生的那刻<span>一直都在</span></p>
+			<ul class="banquan">
+				<li><a href="#">关于lol</a></li>
+				<li><a href="#">其他。。。</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
